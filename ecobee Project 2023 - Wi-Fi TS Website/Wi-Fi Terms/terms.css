@@ -1,0 +1,197 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(245, 245, 245);
+    /* removes the scroll bar that shows in general but specific the right contents */
+    overflow-y: hidden;
+    direction: ltr;
+}
+
+/* CSS for devices with width less than 600px */
+@media screen and (max-width: 600px) {
+    .content-title {
+        width: 100%;
+    }
+}
+
+/* CSS for devices with width greater than or equal to 600px */
+@media screen and (min-width: 600px) {
+    .content-title {
+        width: 50%;
+    }
+}
+
+
+/* NAVIGATION CONTENT */
+ul {
+    /* removed the bullet */
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    color: #144745;
+}
+
+.navRight-statuspg {
+    float: left;
+    margin-top: -45px;
+    margin-left: 150px;
+    font-size: 25px;
+}
+
+.navRight-FAQ {
+    float: left;
+    margin-top: -45px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+#logo-left {
+    margin: 0px;
+    margin-left: -35px;
+    margin-top: -10px;
+}
+
+/* INDIVIDUAL ITEMS */
+
+h1 {
+    text-align: center;
+}
+
+p {
+    /*  color: rgb(156, 156, 156); */
+    color: #EB9D87;
+    direction: ltr;
+    text-align: left;
+}
+
+li {
+    list-style-type: none;
+    direction: ltr;
+    text-align: left;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+.titles {
+    color: #144745;
+}
+
+/* h3 is the specific content that dropdown terms */
+h3 {
+    /*border-bottom: 1px solid black;*/
+    width: 60%;
+    /* creates space of Wi-Fi Terms" and the border-bottom */
+    line-height: 1;
+}
+
+/* HEADER CONTENT */
+header {
+    float: left;
+    margin: 15px;
+    margin-top: -32px;
+    padding: 25px;
+    width: 45%;
+    font-size: 30px;
+    line-height: 0.6;
+}
+
+/* CONTAINER AS A WHOLE CONTENT */
+.container {
+    margin: 15px;
+    margin-top: 5px;
+    padding: 25px;
+    width: 80%;
+}
+
+/* LEFT CONTENT */
+
+.titles {
+    border-left: none;
+    font-size: 12px;
+    color: rgb(0, 0, 70);
+    /* creates space between the details class="titles" */
+    margin-top: -10px;
+}
+
+
+summary {
+    color: #0D6B5C;
+    font-weight: bold;
+    text-align: left;
+}
+
+.terms_floatCentre {
+    width: 45%;
+    height: 35%;
+    margin-left: 20px;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 35px;
+    /* creates space and pushes terms more to the left away from the scroll bar */
+    padding-left: 0%;
+    display: block;
+    /* adjusts to move this div higher to be inline with the floatLeft content */
+    margin-top: 180px;
+    /* ===prevents the left side from moving the right side inwards onclick of terms -- "fixed"
+        allows user to scroll if need by but other wise it kinda acts like a fixed position=== */
+
+    /* position: abosolute allows me to have left content to scroll as needed while acting sticky */
+    position: absolute;
+    /* has a scroll bar for the left content */
+    overflow: scroll;
+    /* hides horizontal scroll bar */
+    overflow-x: hidden;
+    /* moves the actual scroll bar to the left of the div's content */
+    direction: rtl;
+    /* moves the actual terms to the left as i placed the direction: rtl */
+    text-align: left;
+}
+
+
+/* SCROLL BAR */
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+    background-color: #144745;
+    border-radius: 10px;
+}
+
+/* changes scroll bar effect on hover to mimic as if it was onclick */
+::-webkit-scrollbar-thumb:hover {
+    background-color: grey;
+}
+
+details {
+    margin-bottom: 15px;
+    margin-top: 20px;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 35px;
+    text-align: center;
+    /* literal line spacing but between specific text within */
+    line-height: 1.2;
+    background-color: #C7DBF4;
+}
+
+summary {
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.8;
+    list-style-type: none;
+}

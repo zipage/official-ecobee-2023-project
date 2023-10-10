@@ -1,0 +1,59 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(245, 245, 245);
+}
+
+/* CSS for devices with width less than 600px */
+@media screen and (max-width: 600px) {
+    .content-title {
+        width: 100%;
+    }
+}
+
+/* CSS for devices with width greater than or equal to 600px */
+@media screen and (min-width: 600px) {
+    .content-title {
+        width: 50%;
+    }
+}
+
+/* NAVIGATION CONTENT */
+ul {
+    /* removed the bullet */
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    color: #144745;
+}
+
+.navRight-statuspg {
+    float: left;
+    margin-top: -45px;
+    margin-left: 150px;
+    font-size: 25px;
+}
+
+.navRight-FAQ {
+    float: left;
+    margin-top: -45px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+#logo-left {
+    margin: 0px;
+    margin-left: -35px;
+    margin-top: -10px;
+}
+
+/* CONTENT OF FAQ IN ALL */
+.faq {
+    margin: 15px;
+    padding: 25px;
+}
